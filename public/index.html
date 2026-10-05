@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To-Do List</title>
+        <link rel="stylesheet" href="to-do-list.css" />
+    </head>
+
+    <body>
+        <div class="todo-app">
+            <header>
+                <div class="logo">
+                    <h1>To-Do List</h1>
+                    <button id="mode-btn" onclick="myFunction()">
+                        Dark Mode
+                    </button>
+                </div>
+            </header>
+
+            <div class="quote-box" id="quote-box">
+                <p class="quote-text" id="quote-text">
+                    Click "New Quote" for a little motivation.
+                </p>
+                <p class="quote-author" id="quote-author"></p>
+                <button class="quote-btn" id="quote-btn" type="button">
+                    New Quote
+                </button>
+            </div>
+
+            <div class="composer">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Add a task..."
+                    autocomplete="off"
+                />
+                <button id="add-btn">Add</button>
+            </div>
+
+            <!-- DUE DATE + PRIORITY -->
+            <div class="due-row">
+                <label for="due-input">
+                    Due date <input type="date" id="due-input" />
+                </label>
+                <label for="priority-input">
+                    Priority
+                    <select id="priority-input">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                </label>
+            </div>
+
+            <p class="error-msg" id="error-msg"></p>
+
+            <!-- SEARCH + SORT -->
+            <div class="toolbar">
+                <input
+                    type="text"
+                    id="search-input"
+                    class="search-input"
+                    placeholder="Search tasks..."
+                    autocomplete="off"
+                />
+                <select id="sort-select" class="sort-select">
+                    <option value="manual">Manual order</option>
+                    <option value="due">Sort by due date</option>
+                    <option value="priority">Sort by priority</option>
+                </select>
+            </div>
+
+            <!-- FILTER TABS -->
+            <div class="filters">
+                <button
+                    class="filter-btn active"
+                    data-filter="all"
+                    type="button"
+                >
+                    All
+                </button>
+                <button class="filter-btn" data-filter="active" type="button">
+                    Active
+                </button>
+                <button class="filter-btn" data-filter="done" type="button">
+                    Done
+                </button>
+            </div>
+
+            <div class="list-meta">
+                <span id="count-label">0 tasks</span>
+                <span id="done-label"></span>
+            </div>
+
+            <div class="task-list-container">
+                <ul id="task-list"></ul>
+                <div class="empty-state" id="empty-state">
+                    No tasks here yet — add one above!
+                </div>
+            </div>
+        </div>
+
+        <!-- UNDO TOAST -->
+        <div class="toast" id="toast">
+            <span id="toast-msg">Task deleted</span>
+            <button id="toast-undo" type="button">Undo</button>
+        </div>
+
+        <script src="to-do-list.js"></script>
+    </body>
+</html>
