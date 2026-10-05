@@ -132,8 +132,8 @@ body.night-mode .task-list-container::-webkit-scrollbar-thumb:hover {
 .todo-app {
     box-sizing: border-box;
     width: 100%;
-    max-width: 1000px;
-    height: 80%;
+    max-width: 1500px;
+    height: 100%;
     margin: 20px;
     padding: 42px 38px;
     color: var(--text-dark);
