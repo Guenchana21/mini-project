@@ -1,0 +1,29 @@
+[33mcommit d94f1a909132e408dc02f18b09da7014c69e34c1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Guenchana21 <nap.ghabel@gmail.com>
+Date:   Mon Oct 5 16:33:55 2026 +0800
+
+    Remove unused root image folder; keep webp assets in public
+
+[33mcommit 7f3d3383a99ac1569e08f147610bc492e3073cb0[m
+Author: Guenchana21 <nap.ghabel@gmail.com>
+Date:   Mon Oct 5 15:59:50 2026 +0800
+
+    Fix unaccessible web domain issue
+
+[33mcommit 327749df57dcc560ad7a62c564db3d0487e4456e[m
+Author: Guenchana21 <nap.ghabel@gmail.com>
+Date:   Mon Oct 5 15:55:48 2026 +0800
+
+    Fix unaccessible web link
+
+[33mcommit 5d1d6bcaa3db7fcd8a9a65384ed34d71f2c16358[m
+Author: Guenchana21 <nap.ghabel@gmail.com>
+Date:   Mon Oct 5 15:34:04 2026 +0800
+
+    Setup Firebase GitHub deployment
+
+[33mcommit 2b8aa69bc6d3e22d443af83cadafad5a568a5714[m
+Author: Guenchana21 <nap.ghabel@gmail.com>
+Date:   Mon Oct 5 15:17:40 2026 +0800
+
+    Initial Commit
